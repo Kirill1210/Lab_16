@@ -1,0 +1,13 @@
+language: cpp
+compiler:
+  - clang
+before_script:
+  - mkdir ../build
+  - cd ../build
+script:
+  - cmake ../Lab_16
+  - make -j
+  - cd ./test
+  - ./MP16_TESTS
+notifications:
+  email: false
